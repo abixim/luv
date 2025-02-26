@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>para mi zorra fac</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffe6e6;
+            font-family: Arial, sans-serif;
+        }
+        .carta {
+            width: 300px;
+            height: 200px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+        .mensaje {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff4d4d;
+            transform: translateY(100%);
+            opacity: 0;
+            transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+        }
+        .carta:hover .mensaje {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        .corazon {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 30px;
+            color: #ff4d4d;
+        }
+    </style>
+</head>
+<body>
+    <div class="carta">
+        <div class="corazon">❤️</div>
+        <div class="mensaje">te amo mucho mi bella</div>
+    </div>
+</body>
+</html>
